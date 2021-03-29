@@ -1,61 +1,63 @@
 <template>
-  <div
-    class="flex mt-16 justify-center items-center text-xl font-semibold text-black"
-    v-if="isLoading"
-  >
-    <span class="animate-spin mr-2 text-2xl" role="img">🦝</span>
-    <span class="animate-bounce"
-      >Getting checks from Checkly Public API...</span
+  <main class="expand container mx-autoflex flex-col lg:px-0 px-5">
+    <div
+      class="flex mt-16 justify-center items-center text-xl font-semibold text-black"
+      v-if="isLoading"
     >
-  </div>
-  <template v-else>
-    <router-link to="/" class="text-gray-dark hover:underline flex">
-      <div class="flex justify-center items-center">
-        <img
-          src="@/assets/arrow-left.svg"
-          class="mr-2 w-4 h-4"
-          alt="Arrow back"
-        />
-        Back to providers
-      </div>
-    </router-link>
-    <section class="rouned border-pink border rounded-md mt-4">
-      <header
-        class="flex justify-between items-center px-5 py-4 border-pink border-b"
+      <span class="animate-spin mr-2 text-2xl" role="img">🦝</span>
+      <span class="animate-bounce"
+        >Getting checks from Checkly Public API...</span
       >
-        <img
-          class="w-32"
-          :src="`/images/logos/${route.params.provider}.${provider.logo.ext}`"
-          :alt="route.params.provider"
-        />
-
-        <div class="flex flex-col">
-          <h3 class="text-lg text-right text-black">
-            {{ provider.displayName }}
-          </h3>
-          <a class="text-sm text-red" :href="provider.link" rel="noopener">{{
-            provider.link.replace("https://", "")
-          }}</a>
+    </div>
+    <template v-else>
+      <router-link to="/" class="text-gray-dark hover:underline flex">
+        <div class="flex justify-center items-center">
+          <img
+            src="@/assets/arrow-left.svg"
+            class="mr-2 w-4 h-4"
+            alt="Arrow back"
+          />
+          Back to providers
         </div>
-      </header>
+      </router-link>
+      <section class="rouned border-pink border rounded-md mt-4">
+        <header
+          class="flex justify-between items-center px-5 py-4 border-pink border-b"
+        >
+          <img
+            class="w-32"
+            :src="`/images/logos/${route.params.provider}.${provider.logo.ext}`"
+            :alt="route.params.provider"
+          />
 
-      <div class="bg-white md:px-60 px-4 py-14">
-        <RegionsMap :regions="checksByRegion" />
+          <div class="flex flex-col">
+            <h3 class="text-lg text-right text-black">
+              {{ provider.displayName }}
+            </h3>
+            <a class="text-sm text-red" :href="provider.link" rel="noopener">{{
+              provider.link.replace("https://", "")
+            }}</a>
+          </div>
+        </header>
 
-        <div class="flex justify-center mt-6 font-semibold">
-          <span class="text-green text-xs mr-4">TTFB &lt; 200ms </span>
-          <span class="text-yellow text-xs mr-4"
-            >TTFB &gt;= 200ms &lt; 500ms</span
-          >
-          <span class="text-red text-xs">TTFB &gt;= 500ms </span>
+        <div class="bg-white md:px-60 px-4 py-14">
+          <RegionsMap :regions="checksByRegion" />
+
+          <div class="flex justify-center mt-6 font-semibold">
+            <span class="text-green text-xs mr-4">TTFB &lt; 200ms </span>
+            <span class="text-yellow text-xs mr-4"
+              >TTFB &gt;= 200ms &lt; 500ms</span
+            >
+            <span class="text-red text-xs">TTFB &gt;= 500ms </span>
+          </div>
         </div>
-      </div>
 
-      <div class="px-7 pb-16 flex justify-center">
-        <RegionsTable :check-results="checksByRegionArray" />
-      </div>
-    </section>
-  </template>
+        <div class="px-7 pb-16 flex justify-center">
+          <RegionsTable :check-results="checksByRegionArray" />
+        </div>
+      </section>
+    </template>
+  </main>
 </template>
 
 <script>
@@ -130,27 +132,6 @@ export default {
       return checksByRegionArray;
     });
 
-    const regionResults = computed(() => {
-      // const set = new Set();
-      const regions = {};
-
-      checkResults.value
-        .map(result => ({
-          name: result.runLocation,
-          time: result.apiCheckResult.response.timingPhases?.firstByte
-        }))
-        .forEach(result => {
-          if (!regions[result.name]) {
-            regions[result.name] = { ...result, i: 1 };
-          } else {
-            regions[result.name].i += 1;
-            regions[result.name].time += result.time;
-          }
-        });
-
-      return regions;
-    });
-
     onBeforeMount(async () => {
       try {
         const checkResultsRes = await getCheckResults(provider.value.checkId);
@@ -177,7 +158,6 @@ export default {
     return {
       isLoading,
       checks,
-      regionResults,
       checkResults,
       route,
       logo,

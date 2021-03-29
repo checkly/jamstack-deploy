@@ -15,9 +15,7 @@
         </h2>
       </section>
 
-      <main class="container mx-autoflex flex-col lg:px-0 px-5">
-        <router-view />
-      </main>
+      <router-view />
     </div>
     <Footer />
   </div>

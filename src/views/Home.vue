@@ -1,16 +1,18 @@
 <template>
-  <section class="flex flex-wrap lg:justify-start justify-center">
-    <Provider v-for="(v, k) in providers" :key="k" :name="k" :provider="v" />
-    <Card class="flex justify-center px-7 opacity-80">
-      <h3 class="text-red text-sm uppercase font-semibold mb-2.5">
-        Coming up soon
-      </h3>
-      <p class="text-sm text-black">
-        Cloudflare, Azure Static Sites, DigitalOcean CDN, AWS Amplify, Stack
-        Path, AWS S3 + Cloud Front
-      </p>
-    </Card>
-  </section>
+  <main class="container mx-autoflex flex-col lg:px-0 px-5">
+    <section class="flex flex-wrap lg:justify-start justify-center">
+      <Provider v-for="(v, k) in providers" :key="k" :name="k" :provider="v" />
+      <Card class="flex justify-center px-7 opacity-80">
+        <h3 class="text-red text-sm uppercase font-semibold mb-2.5">
+          Coming up soon
+        </h3>
+        <p class="text-sm text-black">
+          Cloudflare, Azure Static Sites, DigitalOcean CDN, AWS Amplify, Stack
+          Path, AWS S3 + Cloud Front
+        </p>
+      </Card>
+    </section>
+  </main>
 </template>
 
 <script>
