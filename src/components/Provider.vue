@@ -19,7 +19,7 @@
         :title="provider.displayName"
         >{{ link }}</a
       >
-      <span class="text-xs text-gray">{{ "~XXms." }} </span>
+      <!-- <span class="text-xs text-gray">{{ "~XXms." }} </span> -->
     </div>
   </Card>
 </template>

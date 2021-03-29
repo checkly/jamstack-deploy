@@ -2873,11 +2873,13 @@ export default {
       return this.regions[region];
     },
 
-    time(region) {
-      return (
-        (this.regions[region].ttfb / this.regions[region].qty).toFixed(2) +
-        "ms."
-      );
+    time(regionName) {
+      const region = this.regions[regionName];
+      if (!region) {
+        return "";
+      }
+
+      return (region.ttfb / region.qty).toFixed(2) + "ms.";
     },
 
     getClass(regionName) {
