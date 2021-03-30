@@ -7,8 +7,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "deploy": "netlify deploy --dir dist --prod"
+    "deploy": "vercel --prod",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.2",
