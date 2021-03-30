@@ -6,7 +6,6 @@
           class="text-left uppercase text-xs text-gray pb-3"
           v-for="th in tableHeads"
           :key="th"
-          :class="th === 'TTFB' ? 'underline' : ''"
         >
           <label for="filter" v-if="th === 'Region'">
             <input
@@ -16,7 +15,15 @@
               v-model="filter"
               placeholder="Filter by Region"
           /></label>
-
+          <span
+            v-else-if="th === 'TTFB'"
+            class="border-b cursor-pointer"
+            v-tippy="{
+              content: 'TTFB is an average of the latest 5 check results',
+              duration: [100, null]
+            }"
+            >TTFS
+          </span>
           <template v-else> {{ th }} </template>
         </th>
       </tr>
@@ -71,10 +78,13 @@
 
 <script>
 import { ref, computed } from "vue";
+import { directive } from "vue-tippy";
 import { regionList } from "@/services/regions";
 
 export default {
   name: "RegionsTable",
+
+  directives: { tippy: directive },
 
   props: {
     checkResults: { type: Array, required: true }

@@ -40,16 +40,26 @@
           </div>
         </header>
 
+        <div class="flex px-4 justify-between mt-2.5 font-semibold">
+          <p class="text-gray  text-xs">
+            Get more data about the latest 7 days
+            <a
+              href="https://status.jamstackdeploy.com"
+              class="text-red hover:underline"
+              target="_blank"
+              rel="noopener"
+              >here</a
+            >.
+          </p>
+          <p class="text-xxs">
+            <span class="text-green mr-2">* TTFB &lt; 200ms </span>
+            <span class="text-yellow mr-2">TTFB &gt;= 200ms &lt; 500ms</span>
+            <span class="text-red">TTFB &gt;= 500ms </span>
+          </p>
+        </div>
+
         <div class="bg-white md:px-60 px-4 py-14">
           <RegionsMap :regions="checksByRegion" />
-
-          <div class="flex justify-center mt-6 font-semibold">
-            <span class="text-green text-xs mr-4">TTFB &lt; 200ms </span>
-            <span class="text-yellow text-xs mr-4"
-              >TTFB &gt;= 200ms &lt; 500ms</span
-            >
-            <span class="text-red text-xs">TTFB &gt;= 500ms </span>
-          </div>
         </div>
 
         <div class="px-7 pb-16 flex justify-center">
@@ -174,5 +184,9 @@ export default {
   .container {
     max-width: 1200px !important;
   }
+}
+
+.text-xxs {
+  font-size: 0.5rem;
 }
 </style>
