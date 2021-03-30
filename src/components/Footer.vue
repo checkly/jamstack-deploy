@@ -18,7 +18,7 @@
         >flaticon.com</a
       >
     </p>
-    <a href="https://github.com/checkly/jamstackdeploy">
+    <a href="https://github.com/checkly/jamstack-deploy">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 45 16"
