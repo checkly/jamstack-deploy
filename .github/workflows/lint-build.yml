@@ -1,0 +1,17 @@
+name: Lint & Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    types: [ opened, synchronize ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Lint
+      run: npm run lint
+    - name: Build
+      run: npm run build

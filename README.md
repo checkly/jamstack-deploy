@@ -46,12 +46,16 @@ $ npm run deploy
 ```
 
 ## Supported Providers
-<img align="left" width="130px" height="30px" src="./public/images/logos/vercel.svg" alt="Vercel" />
-<img align="left" width="140px" height="38px" src="./public/images/logos/netlify.png" alt="Netlify" />
-<img align="left" width="160px" height="45px" src="./public/images/logos/firebase.png" alt="Firebase" />
-<img align="left" width="160px" height="34px" src="./public/images/logos/render.svg" alt="Render" />
-<img align="left" width="140px" height="57px" src="./public/images/logos/github.png" alt="GitHub" />
-<img align="left" width="64px" height="64px" src="./public/images/logos/surge.svg" alt="Surge" />
+<p align="center">
+  <img align="right" width="130px" height="30px" src="./public/images/logos/vercel.svg" alt="Vercel" />
+  <img align="center" width="140px" height="38px" src="./public/images/logos/netlify.png" alt="Netlify" />
+  <img align="left" width="160px" height="45px" src="./public/images/logos/firebase.png" alt="Firebase" />
+</p>
+<p align="center">
+  <img align="right" width="160px" height="34px" src="./public/images/logos/render.svg" alt="Render" />
+  <img align="center" width="140px" height="57px" src="./public/images/logos/github.png" alt="GitHub" />
+  <img align="left" width="64px" height="64px" src="./public/images/logos/surge.svg" alt="Surge" />
+</p>
 
 
 
