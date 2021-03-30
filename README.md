@@ -17,17 +17,6 @@ Checkly has its own Public API that we can use to pull out all this useful infor
 
 > ⚠️ Each check runs twice per day (in all 21 locations). The information you see for each provider is the average of the latest 5 checks. You can also get the latest 7 days performance in our [status dashboard](https://status.jamstackdeploy.com/).
 
-
-## Supported Providers
-<p align="center">
-  <img align=top width="130px" height="30px" src="./public/images/logos/vercel.svg" alt="Vercel" />
-  <img align=top width="140px" height="38px" src="./public/images/logos/netlify.png" alt="Netlify" />
-  <img align=top width="160px" height="45px" src="./public/images/logos/firebase.png" alt="Firebase" />
-  <img align=top width="160px" height="34px" src="./public/images/logos/render.svg" alt="Render" />
-  <img align=top width="140px" height="57px" src="./public/images/logos/github.png" alt="GitHub" />
-  <img align=top width="64px" height="64px" src="./public/images/logos/surge.svg" alt="Surge" />
-</p>
-
 ## 📝 TODO
 1. [ ] Add providers knowledge base
 2. [ ] Implement more providers
@@ -55,6 +44,17 @@ $ npm run lint
 ```bash
 $ npm run deploy
 ```
+
+## Supported Providers
+<p align="center">
+  <img align="top" width="130px" height="30px" src="./public/images/logos/vercel.svg" alt="Vercel" />
+  <img align="top" width="140px" height="38px" src="./public/images/logos/netlify.png" alt="Netlify" />
+  <img align="top" width="160px" height="45px" src="./public/images/logos/firebase.png" alt="Firebase" />
+  <img align="top" width="160px" height="34px" src="./public/images/logos/render.svg" alt="Render" />
+  <img align="top" width="140px" height="57px" src="./public/images/logos/github.png" alt="GitHub" />
+  <img align="top" width="64px" height="64px" src="./public/images/logos/surge.svg" alt="Surge" />
+</p>
+
 
 ## 📄 License
 
