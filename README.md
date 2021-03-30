@@ -30,7 +30,7 @@ Checkly has its own Public API that we can use to pull out all this useful infor
 4. [ ] A vs. B view (compare providers)
 5. [ ] Test, tests and more tests 😅
 
-> Want to add something to the backlog? Create a an issue [here](https://github.com/checkly/jamstack-deploy/issues).
+> Want to add something to the backlog? Create an issue [here](https://github.com/checkly/jamstack-deploy/issues).
 
 ## 🧑‍💻 Development
 ```bash
@@ -46,14 +46,13 @@ $ npm run deploy
 ```
 
 ## Supported Providers
-<p align="center">
-  <img align="top" width="130px" height="30px" src="./public/images/logos/vercel.svg" alt="Vercel" />
-  <img align="top" width="140px" height="38px" src="./public/images/logos/netlify.png" alt="Netlify" />
-  <img align="top" width="160px" height="45px" src="./public/images/logos/firebase.png" alt="Firebase" />
-  <img align="top" width="160px" height="34px" src="./public/images/logos/render.svg" alt="Render" />
-  <img align="top" width="140px" height="57px" src="./public/images/logos/github.png" alt="GitHub" />
-  <img align="top" width="64px" height="64px" src="./public/images/logos/surge.svg" alt="Surge" />
-</p>
+<img align="left" width="130px" height="30px" src="./public/images/logos/vercel.svg" alt="Vercel" />
+<img align="left" width="140px" height="38px" src="./public/images/logos/netlify.png" alt="Netlify" />
+<img align="left" width="160px" height="45px" src="./public/images/logos/firebase.png" alt="Firebase" />
+<img align="left" width="160px" height="34px" src="./public/images/logos/render.svg" alt="Render" />
+<img align="left" width="140px" height="57px" src="./public/images/logos/github.png" alt="GitHub" />
+<img align="left" width="64px" height="64px" src="./public/images/logos/surge.svg" alt="Surge" />
+
 
 
 ## 📄 License
@@ -63,7 +62,7 @@ $ npm run deploy
 <h3 align="center">Supported by</h3>
 <p align="center">
   <a href="https://checklyhq.com?utm_source=github&utm_medium=sponsor-logo-github&utm_campaign=headless-recorder" target="_blank">
-  <img width="200px" src="chrome-store/checkly-logo.png?raw=true" alt="Checkly" />
+  <img width="200px" src="./public/images/checkly.png" alt="Checkly" />
   </a>
   <br />
   <i><sub>Delightful Active Monitoring for Developers</sub></i>
