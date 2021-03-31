@@ -3,11 +3,9 @@
     <div>
       <Header />
       <section class="flex flex-col justify-center items-center px-4 md:px-0">
-        <img
-          class="mt-8 mb-5"
-          src="/images/logo.svg"
-          alt="jamstack deploy logo"
-        />
+        <router-link to="/" class="mt-8 mb-5">
+          <img src="/images/logo.svg" alt="jamstack deploy" />
+        </router-link>
 
         <h2 class="text-base text-center text-black mb-10">
           Measure cloud providers and check which fits better for your Jamstack
