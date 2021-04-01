@@ -30,7 +30,7 @@
             :alt="route.params.provider"
           />
 
-          <div class="flex flex-col">
+          <div class="flex flex-col provider-title">
             <h3 class="text-lg text-right text-black">
               {{ provider.displayName }}
             </h3>
@@ -180,6 +180,12 @@ export default {
 </script>
 
 <style scoped>
+@media (max-width: 320px) {
+  .provider-title {
+    display: none;
+  }
+}
+
 @media (min-width: 990px) {
   .container {
     max-width: 1200px !important;

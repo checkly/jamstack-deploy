@@ -56,10 +56,19 @@ export const provdersList = {
   aws: {
     link: "https://aws.amazon.com",
     displayName: "AWS S3 + CloudFront",
-    checkId: "8d1fc269-c711-40bb-882e-71d30df4f981/",
+    checkId: "8d1fc269-c711-40bb-882e-71d30df4f981",
     logo: {
       ext: "png",
-      style: "width: 100px;"
+      style: "width: 80px;"
+    }
+  },
+  amplify: {
+    link: "https://aws.amazon.com/amplify",
+    displayName: "AWS Amplify",
+    checkId: "d049168f-8676-4c18-93d9-2e714e2bfd06",
+    logo: {
+      ext: "png",
+      style: "width: 220px;"
     }
   }
 };

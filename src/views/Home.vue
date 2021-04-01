@@ -8,7 +8,7 @@
         </h3>
         <p class="text-sm text-black">
           Cloudflare, Azure Static Sites, DigitalOcean CDN, AWS Amplify, Stack
-          Path, AWS S3 + Cloud Front
+          Path, BIP
         </p>
       </Card>
     </section>
