@@ -22,7 +22,7 @@ Checkly has its own Public API that we can use to pull out all this useful infor
 2. [ ] Implement more providers
    1. [x] AWS S3 + AWS Cloudfront
    2. [ ] Azure Static Sites
-   3. [ ] AWS Amplify
+   3. [x] AWS Amplify
    4. [ ] Stack Path
    5. [ ] Cloudflare
    6. [ ] Digital Ocean CDN
