@@ -52,5 +52,14 @@ export const provdersList = {
       ext: "svg",
       style: "width: 64px; height: 64px"
     }
+  },
+  aws: {
+    link: "https://aws.amazon.com",
+    displayName: "AWS S3 + CloudFront",
+    checkId: "8d1fc269-c711-40bb-882e-71d30df4f981/",
+    logo: {
+      ext: "png",
+      style: "width: 100px;"
+    }
   }
 };

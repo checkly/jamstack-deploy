@@ -25,7 +25,7 @@
           class="flex justify-between items-center px-5 py-4 border-pink border-b"
         >
           <img
-            class="w-32"
+            class="max-h-10"
             :src="`/images/logos/${route.params.provider}.${provider.logo.ext}`"
             :alt="route.params.provider"
           />
@@ -51,7 +51,7 @@
               >here</a
             >.
           </p>
-          <p class="text-xxs">
+          <p class="text-xxs hidden md:block">
             <span class="text-green mr-2">* TTFB &lt; 200ms </span>
             <span class="text-yellow mr-2">TTFB &gt;= 200ms &lt; 500ms</span>
             <span class="text-red">TTFB &gt;= 500ms </span>
