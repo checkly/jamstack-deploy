@@ -88,5 +88,14 @@ export const provdersList = {
       ext: "png",
       style: "width: 80px;"
     }
+  },
+  do: {
+    link: "https://digitalocean.com",
+    displayName: "Digital Ocean",
+    checkId: "c99eeb83-14cf-4bb6-90b3-5f5c03a226bb",
+    logo: {
+      ext: "svg",
+      style: "width: 220px;"
+    }
   }
 };
