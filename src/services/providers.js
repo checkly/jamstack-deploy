@@ -70,5 +70,14 @@ export const provdersList = {
       ext: "png",
       style: "width: 220px;"
     }
+  },
+  azure: {
+    link: "https://azure.microsoft.com",
+    displayName: "Microsoft Azure",
+    checkId: "343a2268-cb4e-4156-b215-c7c9756a86b4",
+    logo: {
+      ext: "png",
+      style: "width: 180px;"
+    }
   }
 };
