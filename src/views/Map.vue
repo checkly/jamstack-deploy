@@ -1,14 +1,6 @@
 <template>
   <main class="expand container mx-autoflex flex-col lg:px-0 px-5">
-    <div
-      class="flex mt-16 justify-center items-center text-xl font-semibold text-black"
-      v-if="isLoading"
-    >
-      <span class="animate-spin mr-2 text-2xl" role="img">🦝</span>
-      <span class="animate-bounce"
-        >Getting checks from Checkly Public API...</span
-      >
-    </div>
+    <Loader v-if="isLoading" :text="provider.displayName" />
     <template v-else>
       <router-link to="/" class="text-gray-dark hover:underline flex">
         <div class="flex justify-center items-center">
@@ -40,7 +32,7 @@
           </div>
         </header>
 
-        <div class="flex px-4 justify-between mt-2.5 font-semibold">
+        <div class="flex px-4 justify-between mt-2.5 font-semibold bg-white">
           <p class="text-gray  text-xs">
             Get more data about the latest 7 days
             <a
@@ -62,7 +54,7 @@
           <RegionsMap :regions="checksByRegion" />
         </div>
 
-        <div class="px-7 pb-16 flex justify-center">
+        <div class="px-7 pb-16 flex justify-center bg-white">
           <RegionsTable :check-results="checksByRegionArray" />
         </div>
       </section>
@@ -77,13 +69,14 @@ import { ref, computed, onBeforeMount } from "vue";
 import { provdersList } from "@/services/providers";
 import { getCheckResults } from "@/services/checkly";
 
+import Loader from "@/components/Loader";
 import RegionsMap from "@/components/RegionsMap";
 import RegionsTable from "@/components/RegionsTable";
 
 export default {
   name: "Map",
 
-  components: { RegionsMap, RegionsTable },
+  components: { RegionsMap, RegionsTable, Loader },
 
   setup() {
     const route = useRoute();
