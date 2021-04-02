@@ -7,18 +7,26 @@
     </h4>
     <p class="mb-2">
       Logo mark made by
-      <a class="underline hover:animate-pulse" href="#" target="_blank"
+      <a
+        class="underline hover:animate-pulse"
+        href="https://www.flaticon.com/authors/adib-sulthon"
+        target="_blank"
+        rel="noopener"
         >Adib Sulthon</a
       >
       from
       <a
         class="underline hover:animate-pulse"
         href="https://flaticon.com"
+        rel="noopener"
         target="_blank"
         >flaticon.com</a
       >
     </p>
-    <a href="https://github.com/checkly/jamstack-deploy">
+    <a
+      href="https://github.com/checkly/jamstack-deploy"
+      title="Github repository"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 45 16"

@@ -14,7 +14,7 @@
       </router-link>
       <section class="rouned border-pink border rounded-md mt-4">
         <header
-          class="flex flex-wrap justify-between items-center px-5 py-4 border-pink border-b"
+          class="flex flex-wrap justify-between items-center px-5 py-4 border-pink border-b bg-white-dark"
         >
           <img
             class="max-h-10"
@@ -26,21 +26,24 @@
             <h3 class="text-lg text-right text-black">
               {{ provider.displayName }}
             </h3>
-            <a class="text-sm text-red" :href="provider.link" rel="noopener">{{
-              provider.link.replace("https://", "")
-            }}</a>
+            <a
+              class="text-sm text-red text-right"
+              :href="provider.link"
+              rel="noopener"
+              >{{ provider.link.replace("https://", "") }}</a
+            >
           </div>
         </header>
 
-        <div class="flex px-4 justify-between mt-2.5 font-semibold bg-white">
+        <div class="flex px-4 justify-between pt-2.5 font-semibold bg-white">
           <p class="text-gray  text-xs">
-            Get more data about the latest 7 days
+            Get more data about the latest 7 days in
             <a
               href="https://status.jamstackdeploy.com"
               class="text-red hover:underline"
               target="_blank"
               rel="noopener"
-              >here</a
+              >Checkly Live Dashboard</a
             >.
           </p>
           <p class="text-xxs hidden md:block">
