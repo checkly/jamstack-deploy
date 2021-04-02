@@ -4,11 +4,19 @@
       <Provider v-for="(v, k) in providers" :key="k" :name="k" :provider="v" />
       <Card class="flex justify-center px-7 opacity-80">
         <h3 class="text-red text-sm uppercase font-semibold mb-2.5">
-          Coming up soon
+          Your provider is not here?
         </h3>
         <p class="text-sm text-black">
-          Cloudflare, Azure Static Sites, DigitalOcean CDN, AWS Amplify, Stack
-          Path, BIP
+          Create an
+          <a
+            class="text-red hover:underline"
+            href="https://github.com/checkly/jamstack-deploy/issues"
+            rel="noopener"
+            target="_blank"
+          >
+            issue</a
+          >
+          on GitHub.
         </p>
       </Card>
     </section>

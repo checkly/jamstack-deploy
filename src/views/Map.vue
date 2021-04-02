@@ -27,7 +27,7 @@
               {{ provider.displayName }}
             </h3>
             <a
-              class="text-sm text-red text-right"
+              class="text-sm text-red text-right hover:underline"
               :href="provider.link"
               rel="noopener"
               >{{ provider.link.replace("https://", "") }}</a
