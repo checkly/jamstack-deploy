@@ -22,7 +22,7 @@
       </router-link>
       <section class="rouned border-pink border rounded-md mt-4">
         <header
-          class="flex justify-between items-center px-5 py-4 border-pink border-b"
+          class="flex flex-wrap justify-between items-center px-5 py-4 border-pink border-b"
         >
           <img
             class="max-h-10"

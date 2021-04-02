@@ -36,7 +36,7 @@
       >
         <td>
           <span class="title md:hidden">Region</span>
-          <span class="flex">
+          <span class="flex items-center w-full justify-end md:justify-start">
             <img class="w-5 mr-2.5" :src="getFlag(c.runLocation)" alt="" />
             {{ c.runLocation }}
           </span>
