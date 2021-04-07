@@ -21,12 +21,12 @@ Checkly has its own Public API that we can use to pull out all this useful infor
 1. [ ] Add providers knowledge base
 2. [ ] Implement more providers
    1. [x] AWS S3 + AWS Cloudfront
-   2. [ ] Azure Static Sites
+   2. [x] Azure Static Sites
    3. [x] AWS Amplify
    4. [ ] Stack Path
    5. [ ] Cloudflare
-   6. [ ] Digital Ocean CDN
-   7. [ ] BIP
+   6. [x] Digital Ocean
+   7. [x] BIP
 3. [ ] Monthly performance reports
 4. [ ] A vs. B view (compare providers)
 5. [ ] Test, tests and more tests 😅
