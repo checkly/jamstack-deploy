@@ -97,5 +97,14 @@ export const provdersList = {
       ext: "svg",
       style: "width: 220px;"
     }
+  },
+  cloudflare: {
+    link: "https://pages.cloudflare.com",
+    displayName: "Cloudflare",
+    checkId: "a6a073c5-44b9-48c1-b53f-010e316afb26/",
+    logo: {
+      ext: "svg",
+      style: "width: 150px;"
+    }
   }
 };
