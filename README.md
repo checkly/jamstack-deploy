@@ -24,7 +24,7 @@ Checkly has its own Public API that we can use to pull out all this useful infor
    2. [x] Azure Static Sites
    3. [x] AWS Amplify
    4. [ ] Stack Path
-   5. [ ] Cloudflare
+   5. [x] Cloudflare
    6. [x] Digital Ocean
    7. [x] BIP
 3. [ ] Monthly performance reports
@@ -53,7 +53,7 @@ $ npm run deploy
   <img align="top" width="160px" height="45px" src="./public/images/logos/firebase.png" alt="Firebase" />
   <img align="top" width="160px" height="34px" src="./public/images/logos/render.svg" alt="Render" />
   <img align="top" width="220px" src="./public/images/logos/do.svg" alt="Digital Ocean" />
-  <img align="top" width="160px" src="./public/images/logos/azure.svg" alt="Microsoft Azure" />
+  <img align="top" width="160px" src="./public/images/logos/azure.png" alt="Microsoft Azure" />
 </p>
 <p align="center">
   <img align="top" width="140px" height="57px" src="./public/images/logos/github.png" alt="GitHub" />
