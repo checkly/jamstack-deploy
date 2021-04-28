@@ -53,9 +53,9 @@ $ npm run deploy
   <img align="top" width="160px" height="45px" src="./public/images/logos/firebase.png" alt="Firebase" />
   <img align="top" width="160px" height="34px" src="./public/images/logos/render.svg" alt="Render" />
   <img align="top" width="220px" src="./public/images/logos/do.svg" alt="Digital Ocean" />
-  <img align="top" width="160px" src="./public/images/logos/azure.png" alt="Microsoft Azure" />
 </p>
 <p align="center">
+  <img align="top" width="160px" src="./public/images/logos/azure.png" alt="Microsoft Azure" />
   <img align="top" width="140px" height="57px" src="./public/images/logos/github.png" alt="GitHub" />
   <img align="top" width="64px" height="64px" src="./public/images/logos/surge.svg" alt="Surge" />
   <img align="top" width="80px" src="./public/images/logos/aws.png" alt="AWS" />
