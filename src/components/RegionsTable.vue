@@ -22,7 +22,7 @@
               content: 'TTFB is an average of the latest 5 check results',
               duration: [100, null]
             }"
-            >TTFS
+            >TTFB
           </span>
           <template v-else> {{ th }} </template>
         </th>
