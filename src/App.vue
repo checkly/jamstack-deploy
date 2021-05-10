@@ -7,10 +7,13 @@
           <img src="/images/logo.svg" alt="jamstack deploy" />
         </router-link>
 
-        <h2 class="text-base text-center text-black mb-10">
+        <h2 class="text-base text-center text-black">
           Measure cloud providers and check which fits better for your Jamstack
           App.
         </h2>
+        <a v-if="isHome" href="/about" class="mb-10 text-red text-sm"
+          >Learn more</a
+        >
       </section>
 
       <router-view />
@@ -24,7 +27,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default {
-  components: { Header, Footer }
+  components: { Header, Footer },
+  computed: {
+    isHome() {
+      return this.$route.name === "Home";
+    }
+  }
 };
 </script>
 
