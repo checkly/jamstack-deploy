@@ -11,8 +11,11 @@
           Measure cloud providers and check which fits better for your Jamstack
           App.
         </h2>
-        <a v-if="isHome" href="/about" class="mb-10 text-red text-sm"
-          >Learn more</a
+        <router-link to="/about" v-if="isHome" class="mb-10 text-red text-sm"
+          >Learn more</router-link
+        >
+        <router-link to="/" v-else class="mb-10 text-red text-sm"
+          >Back to home</router-link
         >
       </section>
 

@@ -40,7 +40,6 @@
         providers stack up across time and across the globe, providing the data
         you need to make informed decisions.
       </p>
-      <a href="/" class="mb-10 text-red text-sm">Back home</a>
     </section>
   </main>
 </template>
