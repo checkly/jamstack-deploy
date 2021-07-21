@@ -24,7 +24,7 @@ Checkly has its own Public API that we can use to pull out all this useful infor
 
 > ⚠️ Each check runs twice per day (in all 21 locations). The information you see for each provider is the average of the latest 5 checks. You can also get the latest 7 days performance in our [status dashboard](https://status.jamstackdeploy.com/).
 
-<br> 
+<br>
 
 ## 📝 TODO
 1. [ ] Add providers knowledge base
@@ -42,7 +42,7 @@ Checkly has its own Public API that we can use to pull out all this useful infor
 
 > Want to add something to the backlog? Create an issue [here](https://github.com/checkly/jamstack-deploy/issues).
 
-<br> 
+<br>
 
 ## 🖥 Run Locally
 ```bash
@@ -51,7 +51,7 @@ $ npm run serve
 $ npm run lint
 ```
 
-<br> 
+<br>
 
 ## 🚢 Build & Deploy
 
@@ -59,7 +59,7 @@ $ npm run lint
 $ npm run deploy
 ```
 
-<br> 
+<br>
 
 ## 🏭 Supported Providers
 <p align="center">
@@ -80,9 +80,10 @@ $ npm run deploy
   <img align="top" width="200px" src="./public/images/logos/amplify.png" alt="AWS Amplify" />
   <img align="top" width="150px" src="./public/images/logos/cloudflare.svg" alt="Cloudflare" />
   <img align="top" width="80px" src="./public/images/logos/bip.png" alt="Bip" />
+  <img align="top" width="180px" src="./public/images/logos/hostman.svg" alt="Hostman" />
 </p>
 
-<br> 
+<br>
 
 ## 📄 License
 

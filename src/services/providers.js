@@ -106,5 +106,14 @@ export const provdersList = {
       ext: "svg",
       style: "width: 150px;"
     }
+  },
+  hostman: {
+    link: "https://hostman.com",
+    displayName: "Hostman",
+    checkId: "5533b158-ba47-4179-b4b6-c91875381a52",
+    logo: {
+      ext: "svg",
+      style: "width: 180px;"
+    }
   }
 };
