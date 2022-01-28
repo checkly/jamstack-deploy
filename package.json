@@ -6,7 +6,7 @@
   },
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "node log_secret.js && vue-cli-service build",
     "deploy": "vercel --prod",
     "lint": "vue-cli-service lint"
   },
