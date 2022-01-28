@@ -8,7 +8,7 @@
         </router-link>
 
         <h2 class="text-base text-center text-black">
-          Measure cloud providers and check which one fits better for your Jamstack
+          Measure cloud providers and check which one fits for your Jamstack
           App.
         </h2>
         <router-link to="/about" v-if="isHome" class="mb-10 text-red text-sm"
