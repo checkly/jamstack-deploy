@@ -1,5 +1,6 @@
 const fetch = require("node-fetch");
 
+const ACCOUNT_ID = process.env.ACCOUNT_ID;
 const API_KEY = process.env.API_KEY;
 const API_URL =
   process.env.API_URL || "https://api.checklyhq.com/v1/check-results";
@@ -19,7 +20,10 @@ module.exports = async (req, res) => {
 
   const response = await fetch(`${API_URL}/${id}?limit=21`, {
     method: "GET",
-    headers: { Authorization: "Bearer " + API_KEY }
+    headers: {
+      Authorization: "Bearer " + API_KEY,
+      "x-checkly-account": ACCOUNT_ID
+    }
   });
 
   const json = await response.json();
