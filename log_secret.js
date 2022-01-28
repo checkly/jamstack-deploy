@@ -1,1 +1,1 @@
-console.log('logging secret', process.env.MY_API_SECRET)
+console.log('logging secret', process.env.API_KEY)
