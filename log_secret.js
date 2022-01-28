@@ -1,1 +1,1 @@
-console.log('logging secret', process.env)
+console.log('logging secrets', process.env)
