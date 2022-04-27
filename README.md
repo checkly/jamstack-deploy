@@ -11,7 +11,7 @@
 
 <br>
 
-## 👀 Overview
+## Overview
 The process is quite simple. It starts creating a basic [Nuxt.js static web app](https://github.com/checkly/jamstack-deploy-demo-app) (it is the same app you get when you run the Nuxt.js starter tool).
 
 We took exactly the same app and we deploy it to different Jamstack providers.
@@ -26,7 +26,7 @@ Checkly has its own Public API that we can use to pull out all this useful infor
 
 <br>
 
-## 📝 TODO
+## TODO
 1. [ ] Add providers knowledge base
 2. [ ] Implement more providers
    1. [x] AWS S3 + AWS Cloudfront
@@ -44,7 +44,7 @@ Checkly has its own Public API that we can use to pull out all this useful infor
 
 <br>
 
-## 🖥 Run Locally
+## Run Locally
 ```bash
 $ npm install
 $ npm run serve
@@ -53,7 +53,7 @@ $ npm run lint
 
 <br>
 
-## 🚢 Build & Deploy
+## Build & Deploy
 
 ```bash
 $ npm run deploy
@@ -61,7 +61,7 @@ $ npm run deploy
 
 <br>
 
-## 🏭 Supported Providers
+## Supported Providers
 <p align="center">
   <img align="top" width="130px" height="30px" src="./public/images/logos/vercel.svg" alt="Vercel" />
   <img align="top" width="140px" height="38px" src="./public/images/logos/netlify.png" alt="Netlify" />
@@ -85,7 +85,7 @@ $ npm run deploy
 
 <br>
 
-## 📄 License
+## License
 
 [MIT](https://github.com/checkly/jamstack-deploy/blob/master/LICENSE)
 
