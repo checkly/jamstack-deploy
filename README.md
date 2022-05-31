@@ -8,8 +8,9 @@
 </p>
 
 > 🍯 Measure cloud providers and check which fits better for your Jamstack App.
+
 ![](https://api.checklyhq.com/v1/badges/groups/176115?style=flat-square)
-![]([https://api.checklyhq.com/v1/badges/groups/176115?responseTime=true&style=flat](https://api.checklyhq.com/v1/badges/groups/176115?responseTime=true&style=flat-square)
+![](https://api.checklyhq.com/v1/badges/groups/176115?responseTime=true&style=flat-square)
 <br>
 
 ## Overview
