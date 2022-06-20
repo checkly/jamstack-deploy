@@ -30,13 +30,29 @@ import Card from "@/components/Card";
 import Provider from "@/components/Provider";
 import { provdersList } from "@/services/providers";
 
+function shuffleProviders(providers) {
+  const array = Object.keys(providers);
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+
+  const shuffledProviders = {};
+  array.forEach(key => (shuffledProviders[key] = providers[key]));
+
+  console.log(array);
+  return shuffledProviders;
+}
+
 export default {
   name: "Home",
 
   components: { Provider, Card },
 
   setup() {
-    const providers = ref(provdersList);
+    const providers = ref(shuffleProviders(provdersList));
 
     return { providers };
   }

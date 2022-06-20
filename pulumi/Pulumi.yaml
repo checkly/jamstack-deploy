@@ -1,0 +1,5 @@
+name: jamstack-deploy
+description: Measure cloud providers and check which fits better for your JAMStack web app.
+runtime: nodejs
+template:
+  description: A minimal JavaScript Pulumi program
