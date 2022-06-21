@@ -7,13 +7,10 @@
   <h1>Jamstack Deploy</h1>
 </p>
 
-> 🍯 Measure cloud providers and check which fits better for your Jamstack App.
-
 ![](https://api.checklyhq.com/v1/badges/groups/176115?style=flat-square)
 ![](https://api.checklyhq.com/v1/badges/groups/176115?responseTime=true&style=flat-square)
 <br>
 
-## Overview
 The process is quite simple. It starts creating a basic [Nuxt.js static web app](https://github.com/checkly/jamstack-deploy-demo-app) (it is the same app you get when you run the Nuxt.js starter tool).
 
 We took exactly the same app and we deploy it to different Jamstack providers.
@@ -25,24 +22,6 @@ Each application has its own API check, where we can get some interesting stats 
 Checkly has its own Public API that we can use to pull out all this useful information. Then, we mix it with a little bit of Vue.js and TailwindCSS to bring life to [jamstackdeploy.com](https://jamstackdeploy.com).
 
 > ⚠️ Each check runs twice per day (in all 21 locations). The information you see for each provider is the average of the latest 5 checks. You can also get the latest 7 days performance in our [status dashboard](https://status.jamstackdeploy.com/).
-
-<br>
-
-## TODO
-1. [ ] Add providers knowledge base
-2. [ ] Implement more providers
-   1. [x] AWS S3 + AWS Cloudfront
-   2. [x] Azure Static Sites
-   3. [x] AWS Amplify
-   4. [ ] Stack Path
-   5. [x] Cloudflare
-   6. [x] Digital Ocean
-   7. [x] BIP
-3. [ ] Monthly performance reports
-4. [ ] A vs. B view (compare providers)
-5. [ ] Test, tests and more tests 😅
-
-> Want to add something to the backlog? Create an issue [here](https://github.com/checkly/jamstack-deploy/issues).
 
 <br>
 
