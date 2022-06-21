@@ -9,6 +9,10 @@ if (!API_KEY) {
   throw new Error("Mising env var API_KEY");
 }
 
+if (!ACCOUNT_ID) {
+  throw new Error("Mising env var ACCOUNT_ID");
+}
+
 module.exports = async (req, res) => {
   const { id } = req.query;
 
