@@ -17,54 +17,39 @@ We took exactly the same app and we deploy it to different Jamstack providers.
 
 The last step is to use [Checkly](https://checklyhq.com) to analyze them. Checkly is the API & E2E monitoring platform for the modern stack: programmable, flexible and loving JavaScript.
 
-Each application has its own API check, where we can get some interesting stats (like DNS, response time and **TTFB**). The coolest thing is that those checks run in 21 (yes, 21 😱) [different locations around the world](https://www.checklyhq.com/docs/monitoring/global-locations/). This way, you can check which provider fits better with the countries you want to target.
+Each application has its own API check, where we can get some interesting stats (like DNS, response time and **TTFB**). The coolest thing is that those checks run in 22 (yes, 22 😱) [different locations around the world](https://www.checklyhq.com/docs/monitoring/global-locations/). This way, you can check which provider fits better with the countries you want to target.
 
 Checkly has its own Public API that we can use to pull out all this useful information. Then, we mix it with a little bit of Vue.js and TailwindCSS to bring life to [jamstackdeploy.com](https://jamstackdeploy.com).
 
-> ⚠️ Each check runs twice per day (in all 21 locations). The information you see for each provider is the average of the latest 5 checks. You can also get the latest 7 days performance in our [status dashboard](https://status.jamstackdeploy.com/).
+> ⚠️ Each check runs twice per day (in all 22 locations). The information you see for each provider is the average of the latest 5 checks. You can also get the latest 7 days performance in our [status dashboard](https://status.jamstackdeploy.com/).
 
 <br>
 
-## Run Locally
-```bash
-$ npm install
-$ npm run serve
-$ npm run lint
-```
+### Providers
+- [AWS Amplify](https://aws.amazon.com/amplify)
+- [AWS CloudFront + S3](https://aws.amazon.com/cloudfront/)
+- [Azure](https://azure.microsoft.com)
+- [BIP](https://bip.sh)
+- [Cloudflare](https://pages.cloudflare.com)
+- [Digital Ocean](https://digitalocean.com)
+- [Firebase](https://firebase.google.com)
+- [GitHub Pages](https://pages.github.com)
+- [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)
+- [Hostman](https://hostman.com)
+- [Netlify](https://netlify.com)
+- [Render](https://render.com)
+- [Surge](https://surge.sh)
+- [Vercel](https://vercel.com)
 
-<br>
 
-## Build & Deploy
+## Questions
+For questions and support please open a new  [discussion](https://github.com/checkly/jamstack-deploy/discussions). The issue list of this repo is exclusively for bug reports and feature/docs requests.
 
-```bash
-$ npm run deploy
-```
+## Issues
+Please make sure to respect issue requirements and choose the proper [issue template](https://github.com/checkly/jamstack-deploy/issues/new/choose) when opening an issue. Issues not conforming to the guidelines may be closed.
 
-<br>
-
-## Supported Providers
-<p align="center">
-  <img align="top" width="130px" height="30px" src="./public/images/logos/vercel.svg" alt="Vercel" />
-  <img align="top" width="140px" height="38px" src="./public/images/logos/netlify.png" alt="Netlify" />
-  <img align="top" width="160px" height="45px" src="./public/images/logos/firebase.png" alt="Firebase" />
-  <img align="top" width="160px" height="34px" src="./public/images/logos/render.svg" alt="Render" />
-</p>
-<p align="center">
-  <img align="top" width="160px" src="./public/images/logos/azure.png" alt="Microsoft Azure" />
-  <img align="top" width="140px" height="57px" src="./public/images/logos/github.png" alt="GitHub" />
-  <img align="top" width="64px" height="64px" src="./public/images/logos/surge.svg" alt="Surge" />
-  <img align="top" width="80px" src="./public/images/logos/aws.png" alt="AWS" />
-
-</p>
-<p align="center">
-  <img align="top" width="220px" src="./public/images/logos/do.svg" alt="Digital Ocean" />
-  <img align="top" width="200px" src="./public/images/logos/amplify.png" alt="AWS Amplify" />
-  <img align="top" width="150px" src="./public/images/logos/cloudflare.svg" alt="Cloudflare" />
-  <img align="top" width="80px" src="./public/images/logos/bip.png" alt="Bip" />
-  <img align="top" width="180px" src="./public/images/logos/hostman.svg" alt="Hostman" />
-</p>
-
-<br>
+## Contribution
+Please make sure to read the [Contributing Guide](https://github.com/checkly/jamstack-deploy/blob/main/CONTRIBUTING.md) before making a pull request.
 
 ## License
 

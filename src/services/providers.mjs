@@ -9,7 +9,7 @@ export const provdersList = {
     }
   },
   aws: {
-    link: "https://aws.amazon.com",
+    link: "https://aws.amazon.com/cloudfront/",
     checkUrl: "https://s3.jamstackdeploy.com",
     displayName: "AWS S3 + CloudFront",
     checkId: "553c30f5-51ab-4cb4-98c4-44c9704331ed",
@@ -77,8 +77,8 @@ export const provdersList = {
   },
 
   gitlab: {
-    link: "https://gitlab.com",
-    displayName: "Gitlab",
+    link: "https://docs.gitlab.com/ee/user/project/pages/",
+    displayName: "Gitlab Pages",
     checkId: "0d0a59e5-f54f-4ff9-811f-1a07c91f2df2",
     logo: {
       ext: "png",
