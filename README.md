@@ -7,8 +7,8 @@
   <h1>Jamstack Deploy</h1>
 </p>
 
-![](https://api.checklyhq.com/v1/badges/groups/176115?style=flat-square)
-![](https://api.checklyhq.com/v1/badges/groups/176115?responseTime=true&style=flat-square)
+![](https://api.checklyhq.com/v1/badges/groups/286341?style=flat-square&theme=default)
+![](https://api.checklyhq.com/v1/badges/groups/286341?style=flat-square&theme=default&responseTime=true)
 <br>
 
 The process is quite simple. It starts creating a basic [Nuxt.js static web app](https://github.com/checkly/jamstack-deploy-demo-app) (it is the same app you get when you run the Nuxt.js starter tool).
