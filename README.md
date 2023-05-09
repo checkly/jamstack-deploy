@@ -1,10 +1,6 @@
-<p align="center">
-  <img width="400px" src="./public/images/logo.svg" alt="Jamstack Deploy" />
-</p>
-
 <p>
-  <img height="128" src="https://www.checklyhq.com/images/footer-logo.svg" align="right" />
-  <h1>Jamstack Deploy</h1>
+  <img height="128" src="https://cdn.checklyhq.com/logos/racoon_logo.svg" align="right" />
+  <img width="400px" src="./public/images/logo.svg" alt="Jamstack Deploy" />
 </p>
 
 ![](https://api.checklyhq.com/v1/badges/groups/286341?style=flat-square&theme=default)
@@ -58,11 +54,11 @@ Please make sure to read the [Contributing Guide](https://github.com/checkly/jam
 <br>
 
 <p align="center">
-  <a href="https://checklyhq.com?utm_source=github&utm_medium=sponsor-logo-github&utm_campaign=headless-recorder" target="_blank">
+  <a href="https://cdn.checklyhq.com/logos/checkly_racoon_logo_horizontal.svg" target="_blank">
   <img width="100px" src="https://www.checklyhq.com/images/text_racoon_logo.svg" alt="Checkly" />
   </a>
   <br />
-  <i><sub>Delightful Active Monitoring for Developers</sub></i>
+  <i><sub>Code, test, and deploy synthetic monitoring at scale</sub></i>
   <br>
   <b><sub>From Checkly with ♥️</sub></b>
 <p>
