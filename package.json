@@ -35,7 +35,7 @@
     "eslint-plugin-vue-a11y": "0.0.31",
     "prettier": "1.19.1",
     "vue-cli-plugin-tailwind": "2.0.6",
-    "@pulumi/pulumi": "3.34.1",
+    "@pulumi/pulumi": "3.74.0",
     "@checkly/pulumi": "1.0.0"
   }
 }
